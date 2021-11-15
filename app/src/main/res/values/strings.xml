@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HackerNews</string>
+    <string name="msg_something_went_wrong">Something Went Wrong!!!</string>
+</resources>
