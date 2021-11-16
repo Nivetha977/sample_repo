@@ -68,6 +68,7 @@ dependencies {
         exclude group: 'org.json', module: 'json'
     }
 
+    // room db
     implementation 'androidx.room:room-runtime:2.4.0-beta01'
     kapt 'androidx.room:room-compiler:2.4.0-beta01'
 

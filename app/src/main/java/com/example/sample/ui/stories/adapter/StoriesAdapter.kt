@@ -1,5 +1,6 @@
 package com.example.sample.ui.stories.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
@@ -43,6 +44,7 @@ class StoriesAdapter(private val storiesList: List<StoriesData>) :
     }
 
     override fun getItemCount(): Int {
+        Log.e("Nive ", "getItemCount: " + storiesFilterList.size)
         return storiesFilterList.size
     }
 
@@ -58,7 +60,7 @@ class StoriesAdapter(private val storiesList: List<StoriesData>) :
                 } else {
                     val resultList = ArrayList<StoriesData>()
                     for (row in storiesList) {
-                        if (row.title.lowercase().contains(constraint.toString().lowercase())) {
+                        if (row.title.toLowerCase().contains(constraint.toString().toLowerCase())) {
                             resultList.add(row)
                         }
                     }
